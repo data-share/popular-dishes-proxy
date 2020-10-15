@@ -20,7 +20,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-```[id, name]```
+  ```[id, name]```
 
 &nbsp;
 ## POST restaurant info
@@ -40,7 +40,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-```['Successfully created a restaurant.']``` or ```['Failed to create a restaurant.']```
+  ```['Successfully created a restaurant.']``` or ```['Failed to create a restaurant.']```
 
 &nbsp;
 ## Update restaurant info
@@ -63,7 +63,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-```['Successfully updated a restaurant's information.']``` or ```['Failed to create a restaurant's information.']```
+  ```['Successfully updated a restaurant's information.']``` or ```['Failed to create a restaurant's information.']```
 
 &nbsp;
 ## Delete restaurant info
@@ -83,4 +83,4 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-```['Successfully updated a restaurant's information.']``` or ```['Failed to create a restaurant's information.']```
+  ```['Successfully updated a restaurant's information.']``` or ```['Failed to create a restaurant's information.']```
