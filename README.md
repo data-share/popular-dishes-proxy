@@ -7,8 +7,9 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 * GET ```/api/dishes/restaurant/:id```
 
-### Path parameters:
+### Path paramenters:
 
+**Request parameters**
 * ```id``` restaurant id
 
 ### Path responses:
@@ -25,8 +26,9 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 * POST ```/api/dishes/restaurant/```
 
-### Path body:
+### Path paramenters:
 
+**Request body**
 * ```name: RESTAURANT_NAME``` 
 
 ### Path responses:
@@ -43,12 +45,12 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 * PUT ```/api/dishes/restaurant/:id```
 
-### Path paramenters and body:
+### Path paramenters:
 
-**Request Parameters**
+**Request parameters**
 * ```id``` restaurant id
 
-**Request Body**
+**Request body**
 * ```name: RESTAURANT_NAME``` 
 
 ### Path responses:
@@ -65,8 +67,9 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 * DELETE ```/api/dishes/restaurant/:id```
 
-### Path body:
+### Path paramenters:
 
+**Request parameters**
 * ```id``` restaurant id
 
 ### Path responses:
