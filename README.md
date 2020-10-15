@@ -87,7 +87,7 @@ This server provides the end-points for a popular dishes service on to a well kn
   
 &nbsp;
 &nbsp;
-## Get dishes info
+## Get dish info
 
 * GET ```/api/dishes/restaurant/dish/:id```
 
@@ -107,7 +107,7 @@ This server provides the end-points for a popular dishes service on to a well kn
   ```[id, restr_id, name, ingredients, picture]```
 
 &nbsp;
-## POST restaurant info
+## POST dish info
 
 * POST ```/api/dishes/restaurant/dish/```
 
@@ -187,7 +187,7 @@ This server provides the end-points for a popular dishes service on to a well kn
   
 &nbsp;
 &nbsp;
-## Get users info
+## Get user info
 
 * GET ```/api/dishes/restaurant/user/:id```
 
