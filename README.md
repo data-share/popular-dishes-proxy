@@ -6,14 +6,14 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 * GET ```/api/dishes/restaurant/:id```
 
-## Path parameters:
+### Path parameters:
 
 * ```id``` restaurant id
 
-** Success Status Code: ** `200`
-** Failure Status Code: ** `404`
+**Success Status Code:** `200`
+**Failure Status Code:** `404`
 
-** Returns: ** JSON
+**Returns:** JSON
 
 ```[id, name]```
 
@@ -21,14 +21,14 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 * POST ```/api/dishes/restaurant/```
 
-## Path body:
+### Path body:
 
 * ```id``` restaurant id
 
-** Success Status Code: ** `200`
-** Failure Status Code: ** `404`
+**Success Status Code:** `200`
+**Failure Status Code:** `404`
 
-** Returns: ** JSON
+**Returns:** JSON
 
 ['Successfully created a restaurant.'] or ['Failed to create a restaurant.']
 
@@ -37,13 +37,13 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 * PUT ```/api/dishes/restaurant/:id```
 
-## Path body:
+### Path body:
 
 * ```id``` restaurant id
 
-** Success Status Code: ** `200`
-** Failure Status Code: ** `404`
+**Success Status Code:** `200`
+**Failure Status Code:** `404`
 
-** Returns: ** JSON
+**Returns:** JSON
 
 ['Successfully updated a restaurant's information.'] or ['Failed to create a restaurant's information.']
