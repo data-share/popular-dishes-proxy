@@ -19,7 +19,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ```[id, name]```
 
-
+&nbsp;
 ## POST restaurant info
 
 * POST ```/api/dishes/restaurant/```
@@ -36,7 +36,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ['Successfully created a restaurant.'] or ['Failed to create a restaurant.']
 
-
+&nbsp;
 ## Update restaurant info
 
 * PUT ```/api/dishes/restaurant/:id```
@@ -53,7 +53,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ['Successfully updated a restaurant's information.'] or ['Failed to create a restaurant's information.']
 
-
+&nbsp;
 ## Delete restaurant info
 
 * DELETE ```/api/dishes/restaurant/:id```
