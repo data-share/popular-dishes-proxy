@@ -26,9 +26,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ### Path body:
 
-* ```{
-  name: RESTAURANT_NAME
-}``` restaurant id
+* ```name: RESTAURANT_NAME``` 
 
 **Success Status Code:** `200`
 
@@ -43,9 +41,13 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 * PUT ```/api/dishes/restaurant/:id```
 
-### Path body:
+### Path paramenters and body:
 
+**Request Parameters**
 * ```id``` restaurant id
+
+**Request Body**
+* ```name: RESTAURANT_NAME``` 
 
 **Success Status Code:** `200`
 
