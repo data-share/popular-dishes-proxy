@@ -26,7 +26,9 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ### Path body:
 
-* ```id``` restaurant id
+* ```{
+  name: RESTAURANT_NAME
+}``` restaurant id
 
 **Success Status Code:** `200`
 
