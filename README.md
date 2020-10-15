@@ -11,6 +11,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 * ```id``` restaurant id
 
+### Path responses:
 **Success Status Code:** `200`
 
 **Failure Status Code:** `404`
@@ -28,6 +29,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 * ```name: RESTAURANT_NAME``` 
 
+### Path responses:
 **Success Status Code:** `200`
 
 **Failure Status Code:** `404`
@@ -49,6 +51,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 **Request Body**
 * ```name: RESTAURANT_NAME``` 
 
+### Path responses:
 **Success Status Code:** `200`
 
 **Failure Status Code:** `404`
@@ -66,6 +69,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 * ```id``` restaurant id
 
+### Path responses:
 **Success Status Code:** `200`
 
 **Failure Status Code:** `404`
