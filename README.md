@@ -1,7 +1,8 @@
 # popular-dishes-server
 
-This server provides the end-points for a popular dishes service on to a well known restaurant's web application.\\
+This server provides the end-points for a popular dishes service on to a well known restaurant's web application.
 
+&nbsp;
 ## Get restaurant info
 
 * GET ```/api/dishes/restaurant/:id```
