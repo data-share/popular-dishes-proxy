@@ -17,6 +17,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 * Failure Status Code: `404`
 
+### Response format:
 * Returns: JSON
 
 ```[id, name]```
@@ -32,11 +33,12 @@ This server provides the end-points for a popular dishes service on to a well kn
 * ```name: RESTAURANT_NAME``` 
 
 ### Path responses:
-**Success Status Code:** `200`
+* Success Status Code: `200`
 
-**Failure Status Code:** `404`
+* Failure Status Code: `404`
 
-**Returns:** JSON
+### Response format:
+* Returns: JSON
 
 ```['Successfully created a restaurant.']``` or ```['Failed to create a restaurant.']```
 
@@ -54,11 +56,12 @@ This server provides the end-points for a popular dishes service on to a well kn
 * ```name: RESTAURANT_NAME``` 
 
 ### Path responses:
-**Success Status Code:** `200`
+* Success Status Code: `200`
 
-**Failure Status Code:** `404`
+* Failure Status Code: `404`
 
-**Returns:** JSON
+### Response format:
+* Returns: JSON
 
 ```['Successfully updated a restaurant's information.']``` or ```['Failed to create a restaurant's information.']```
 
@@ -73,10 +76,11 @@ This server provides the end-points for a popular dishes service on to a well kn
 * ```id``` restaurant id
 
 ### Path responses:
-**Success Status Code:** `200`
+* Success Status Code: `200`
 
-**Failure Status Code:** `404`
+* Failure Status Code: `404`
 
-**Returns:** JSON
+### Response format:
+* Returns: JSON
 
 ```['Successfully updated a restaurant's information.']``` or ```['Failed to create a restaurant's information.']```
