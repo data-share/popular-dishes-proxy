@@ -135,7 +135,7 @@ This server provides the end-points for a popular dishes service on to a well kn
   ```['Successfully created a dish.']``` or ```['Failed to create a dish.']``
 
 &nbsp;
-## Update restaurant info
+## Update dish info
 
 * PUT ```/api/dishes/restaurant/dish/:id```
 
@@ -166,7 +166,7 @@ This server provides the end-points for a popular dishes service on to a well kn
   ```['Successfully updated a dish's information.']``` or ```['Failed to create a dish's information.']```
 
 &nbsp;
-## Delete restaurant info
+## Delete dish info
 
 * DELETE ```/api/dishes/restaurants/dish/:id```
 
