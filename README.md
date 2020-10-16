@@ -281,3 +281,106 @@ This server provides the end-points for a popular dishes service on to a well kn
 
   ```['Successfully delete a user's information.']``` or ```['Failed to delete a user's information.']```
 
+&nbsp;
+&nbsp;
+## Get review info
+
+* GET ```/api/dishes/restaurant/review/:id```
+
+### Path paramenters:
+
+**Request parameters**
+* ```id``` review id
+
+### Path responses:
+* Success Status Code: `200`
+
+* Failure Status Code: `404`
+
+### Response format:
+* Returns: JSON
+
+  ```[id, dish_id, user_id, review, dined_on, stars, user_status]```
+
+&nbsp;
+## POST review info
+
+* POST ```/api/dishes/restaurant/user/```
+
+### Path paramenters:
+
+**Request body**
+* 
+```json
+    {
+      "dish_id": INT,
+      "user_id": INT,
+      "reviews": VARCHAR(1000),
+      "dine_on": DATE,
+      "stars": SMALLINT,
+      "user_status": BOOLEAN,
+    }
+```
+
+### Path responses:
+* Success Status Code: `200`
+
+* Failure Status Code: `404`
+
+### Response format:
+* Returns: JSON
+
+  ```['Successfully created an review.']``` or ```['Failed to create a review.']``
+
+&nbsp;
+## Update review info
+
+* PUT ```/api/dishes/restaurant/review/:id```
+
+### Path paramenters:
+
+**Request parameters**
+* ```id``` review id
+
+**Request body**
+* 
+```json
+    {
+      "dish_id": INT,
+      "user_id": INT,
+      "reviews": VARCHAR(1000),
+      "dine_on": DATE,
+      "stars": SMALLINT,
+      "user_status": BOOLEAN,
+    }
+```
+
+### Path responses:
+* Success Status Code: `200`
+
+* Failure Status Code: `404`
+
+### Response format:
+* Returns: JSON
+
+  ```['Successfully updated a review.']``` or ```['Failed to create a review.']```
+
+&nbsp;
+## Delete review info
+
+* DELETE ```/api/dishes/restaurant/review/:id```
+
+### Path paramenters:
+
+**Request parameters**
+* ```id``` review id
+
+### Path responses:
+* Success Status Code: `200`
+
+* Failure Status Code: `404`
+
+### Response format:
+* Returns: JSON
+
+  ```['Successfully delete a review.']``` or ```['Failed to delete a review.']```
