@@ -20,7 +20,12 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-  ```[id, name]```
+```json
+    {
+      "restaurant_id": "INT",
+      "restaurant_name": "VARCHAR(50)",
+    }
+```
 
 &nbsp;
 ## POST restaurant info
@@ -40,8 +45,17 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-  ```['Successfully created a restaurant.']``` or ```['Failed to create a restaurant.']```
+```json
+    {
+      "message": 'Successfully created a restaurant.'
+    }
+```
 
+```json
+    {
+      "message": 'Failed to create a restaurant.'
+    }
+```
 &nbsp;
 ## Update restaurant info
 
@@ -63,7 +77,17 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-  ```['Successfully updated a restaurant's information.']``` or ```['Failed to update a restaurant's information.']```
+```json
+    {
+      "message": 'Successfully updated a restaurant's information.'
+    }
+```
+
+```json
+    {
+      "message": 'Failed to update a restaurant's information.'
+    }
+```
 
 &nbsp;
 ## Delete restaurant info
@@ -83,8 +107,17 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-  ```['Successfully deleted a restaurant's information.']``` or ```['Failed to delete a restaurant's information.']```
-  
+```json
+    {
+      "message": 'Successfully deleted a restaurant's information.'
+    }
+```
+
+```json
+    {
+      "message": 'Failed to delete a restaurant's information.'
+    }
+```
 &nbsp;
 &nbsp;
 ## Get dish info
@@ -132,7 +165,17 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-  ```['Successfully created a dish.']``` or ```['Failed to create a dish.']``
+```json
+    {
+      "message": 'Successfully created a dish.'
+    }
+```
+
+```json
+    {
+      "message": 'Failed to create a dish.'
+    }
+```
 
 &nbsp;
 ## Update dish info
@@ -163,8 +206,17 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-  ```['Successfully updated a dish's information.']``` or ```['Failed to create a dish's information.']```
+```json
+    {
+      "message": 'Successfully updated a dish's information.'
+    }
+```
 
+```json
+    {
+      "message": 'Failed to create a dish's information.'
+    }
+```
 &nbsp;
 ## Delete dish info
 
@@ -183,8 +235,18 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-  ```['Successfully delete a dish's information.']``` or ```['Failed to delete a dish's information.']```
-  
+```json
+    {
+      "message": 'Successfully delete a dish's information.'
+    }
+```
+
+```json
+    {
+      "message": 'Failed to delete a dish's information.'
+    }
+```
+
 &nbsp;
 &nbsp;
 ## Get user info
@@ -230,8 +292,17 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-  ```['Successfully created an user.']``` or ```['Failed to create a user.']```
+```json
+    {
+      "message": 'Successfully created an user.'
+    }
+```
 
+```json
+    {
+      "message": 'Failed to create a user.'
+    }
+```
 &nbsp;
 ## Update user info
 
@@ -259,8 +330,17 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-  ```['Successfully updated a user's information.']``` or ```['Failed to create a user's information.']```
+```json
+    {
+      "message": 'Successfully updated a user's information.'
+    }
+```
 
+```json
+    {
+      "message": 'Failed to updated a user's information.'
+    }
+```
 &nbsp;
 ## Delete user info
 
@@ -279,8 +359,17 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-  ```['Successfully delete a user's information.']``` or ```['Failed to delete a user's information.']```
+```json
+    {
+      "message": 'Successfully delete a user's information.'
+    }
+```
 
+```json
+    {
+      "message": 'Failed to delete a user's information.'
+    }
+```
 &nbsp;
 &nbsp;
 ## Get review info
@@ -330,8 +419,17 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-  ```['Successfully created an review.']``` or ```['Failed to create a review.']``
+```json
+    {
+      "message": 'Successfully created an review.'
+    }
+```
 
+```json
+    {
+      "message": 'Failed to create a review.'
+    }
+```
 &nbsp;
 ## Update review info
 
@@ -363,8 +461,17 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-  ```['Successfully updated a review.']``` or ```['Failed to create a review.']```
+```json
+    {
+      "message": 'Successfully updated a review.'
+    }
+```
 
+```json
+    {
+      "message": 'Failed to update a review.'
+    }
+```
 &nbsp;
 ## Delete review info
 
@@ -383,4 +490,14 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-  ```['Successfully delete a review.']``` or ```['Failed to delete a review.']```
+  ```json
+    {
+      "message": 'Successfully delete a review.'
+    }
+```
+
+```json
+    {
+      "message": 'Failed to delete a review.'
+    }
+```
