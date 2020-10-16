@@ -5,7 +5,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## Get restaurant info
 
-* GET ```/api/dishes/restaurant/:id```
+* GET ```/api/restaurant/:id```
 
 ### Path paramenters:
 
@@ -25,7 +25,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## POST restaurant info
 
-* POST ```/api/dishes/restaurant/```
+* POST ```/api/restaurant/```
 
 ### Path paramenters:
 
@@ -45,7 +45,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## Update restaurant info
 
-* PUT ```/api/dishes/restaurant/:id```
+* PUT ```/api/restaurant/:id```
 
 ### Path paramenters:
 
@@ -68,7 +68,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## Delete restaurant info
 
-* DELETE ```/api/dishes/restaurant/:id```
+* DELETE ```/api/restaurant/:id```
 
 ### Path paramenters:
 
@@ -89,7 +89,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## Get dish info
 
-* GET ```/api/dishes/restaurant/dish/:id```
+* GET ```/api/restaurant/dish/:id```
 
 ### Path paramenters:
 
@@ -109,7 +109,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## POST dish info
 
-* POST ```/api/dishes/restaurant/dish/```
+* POST ```/api/restaurant/dish/```
 
 ### Path paramenters:
 
@@ -137,7 +137,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## Update dish info
 
-* PUT ```/api/dishes/restaurant/dish/:id```
+* PUT ```/api/restaurant/dish/:id```
 
 ### Path paramenters:
 
@@ -168,7 +168,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## Delete dish info
 
-* DELETE ```/api/dishes/restaurants/dish/:id```
+* DELETE ```/api/restaurants/dish/:id```
 
 ### Path paramenters:
 
@@ -189,7 +189,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## Get user info
 
-* GET ```/api/dishes/restaurant/user/:id```
+* GET ```/api/restaurant/user/:id```
 
 ### Path paramenters:
 
@@ -209,7 +209,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## POST user info
 
-* POST ```/api/dishes/restaurant/user/```
+* POST ```/api/restaurant/user/```
 
 ### Path paramenters:
 
@@ -235,7 +235,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## Update user info
 
-* PUT ```/api/dishes/restaurant/user/:id```
+* PUT ```/api/restaurant/user/:id```
 
 ### Path paramenters:
 
@@ -264,7 +264,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## Delete user info
 
-* DELETE ```/api/dishes/restaurant/user/:id```
+* DELETE ```/api/restaurant/user/:id```
 
 ### Path paramenters:
 
@@ -285,7 +285,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## Get review info
 
-* GET ```/api/dishes/restaurant/review/:id```
+* GET ```/api/restaurant/review/:id```
 
 ### Path paramenters:
 
@@ -305,7 +305,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## POST review info
 
-* POST ```/api/dishes/restaurant/user/```
+* POST ```/api/restaurant/user/```
 
 ### Path paramenters:
 
@@ -335,7 +335,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## Update review info
 
-* PUT ```/api/dishes/restaurant/review/:id```
+* PUT ```/api/restaurant/review/:id```
 
 ### Path paramenters:
 
@@ -368,7 +368,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 &nbsp;
 ## Delete review info
 
-* DELETE ```/api/dishes/restaurant/review/:id```
+* DELETE ```/api/restaurant/review/:id```
 
 ### Path paramenters:
 
