@@ -490,7 +490,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-  ```json
+```json
     {
       "message": "Successfully delete a review."
     }
