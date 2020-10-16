@@ -117,10 +117,10 @@ This server provides the end-points for a popular dishes service on to a well kn
 * 
 ```json
     {
-      "restr_id": "String",
-      "name": "String",
-      "ingredients": "String",
-      "picture": "String",
+      "restr_id": "INT",
+      "name": "VARCHAR(50)",
+      "ingredients": "VARCHAR(200)",
+      "picture": "VARCHAR(150)",
     }
 ```
 
@@ -148,10 +148,10 @@ This server provides the end-points for a popular dishes service on to a well kn
 * 
 ```json
     {
-      "restr_id": "String",
-      "name": "String",
-      "ingredients": "String",
-      "picture": "String",
+      "restr_id": "INT",
+      "name": "VARCHAR(50)",
+      "ingredients": "VARCHAR(200)",
+      "picture": "VARCHAR(150)",
     }
 ```
 
@@ -217,8 +217,8 @@ This server provides the end-points for a popular dishes service on to a well kn
 * 
 ```json
     {
-      "name": "String",
-      "avatar": "String",
+      "name": "VARCHAR(50)",
+      "avatar": "VARCHAR(50)",
     }
 ```
 
@@ -246,8 +246,8 @@ This server provides the end-points for a popular dishes service on to a well kn
 * 
 ```json
     {
-      "name": "String",
-      "avatar": "String",
+      "name": "VARCHAR(50)",
+      "avatar": "VARCHAR(50)",
     }
 ```
 
@@ -313,12 +313,12 @@ This server provides the end-points for a popular dishes service on to a well kn
 * 
 ```json
     {
-      "dish_id": INT,
-      "user_id": INT,
-      "reviews": VARCHAR(1000),
-      "dine_on": DATE,
-      "stars": SMALLINT,
-      "user_status": BOOLEAN,
+      "dish_id": "INT",
+      "user_id": "INT",
+      "reviews": "VARCHAR(1000)",
+      "dine_on": "DATE",
+      "stars": "SMALLINT",
+      "user_status": "BOOLEAN",
     }
 ```
 
@@ -346,12 +346,12 @@ This server provides the end-points for a popular dishes service on to a well kn
 * 
 ```json
     {
-      "dish_id": INT,
-      "user_id": INT,
-      "reviews": VARCHAR(1000),
-      "dine_on": DATE,
-      "stars": SMALLINT,
-      "user_status": BOOLEAN,
+      "dish_id": "INT",
+      "user_id": "INT",
+      "reviews": "VARCHAR(1000)",
+      "dine_on": "DATE",
+      "stars": "SMALLINT",
+      "user_status": "BOOLEAN",
     }
 ```
 
