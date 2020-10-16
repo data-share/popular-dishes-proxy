@@ -230,7 +230,7 @@ This server provides the end-points for a popular dishes service on to a well kn
 ### Response format:
 * Returns: JSON
 
-  ```['Successfully created an user.']``` or ```['Failed to create a user.']``
+  ```['Successfully created an user.']``` or ```['Failed to create a user.']```
 
 &nbsp;
 ## Update user info
