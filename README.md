@@ -47,13 +47,13 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ```json
     {
-      "message": 'Successfully created a restaurant.'
+      "message": "Successfully created a restaurant."
     }
 ```
 
 ```json
     {
-      "message": 'Failed to create a restaurant.'
+      "message": "Failed to create a restaurant."
     }
 ```
 &nbsp;
@@ -79,13 +79,13 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ```json
     {
-      "message": 'Successfully updated a restaurant's information.'
+      "message": "Successfully updated a restaurant's information."
     }
 ```
 
 ```json
     {
-      "message": 'Failed to update a restaurant's information.'
+      "message": "Failed to update a restaurant's information."
     }
 ```
 
@@ -109,13 +109,13 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ```json
     {
-      "message": 'Successfully deleted a restaurant's information.'
+      "message": "Successfully deleted a restaurant's information."
     }
 ```
 
 ```json
     {
-      "message": 'Failed to delete a restaurant's information.'
+      "message": "Failed to delete a restaurant's information."
     }
 ```
 &nbsp;
@@ -167,13 +167,13 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ```json
     {
-      "message": 'Successfully created a dish.'
+      "message": "Successfully created a dish."
     }
 ```
 
 ```json
     {
-      "message": 'Failed to create a dish.'
+      "message": "Failed to create a dish."
     }
 ```
 
@@ -208,13 +208,13 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ```json
     {
-      "message": 'Successfully updated a dish's information.'
+      "message": "Successfully updated a dish's information."
     }
 ```
 
 ```json
     {
-      "message": 'Failed to create a dish's information.'
+      "message": "Failed to create a dish's information."
     }
 ```
 &nbsp;
@@ -237,13 +237,13 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ```json
     {
-      "message": 'Successfully delete a dish's information.'
+      "message": "Successfully delete a dish's information."
     }
 ```
 
 ```json
     {
-      "message": 'Failed to delete a dish's information.'
+      "message": "Failed to delete a dish's information."
     }
 ```
 
@@ -294,13 +294,13 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ```json
     {
-      "message": 'Successfully created an user.'
+      "message": "Successfully created an user."
     }
 ```
 
 ```json
     {
-      "message": 'Failed to create a user.'
+      "message": "Failed to create a user."
     }
 ```
 &nbsp;
@@ -332,13 +332,13 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ```json
     {
-      "message": 'Successfully updated a user's information.'
+      "message": "Successfully updated a user's information."
     }
 ```
 
 ```json
     {
-      "message": 'Failed to updated a user's information.'
+      "message": "Failed to updated a user's information."
     }
 ```
 &nbsp;
@@ -361,13 +361,13 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ```json
     {
-      "message": 'Successfully delete a user's information.'
+      "message": "Successfully delete a user's information."
     }
 ```
 
 ```json
     {
-      "message": 'Failed to delete a user's information.'
+      "message": "Failed to delete a user's information."
     }
 ```
 &nbsp;
@@ -421,13 +421,13 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ```json
     {
-      "message": 'Successfully created an review.'
+      "message": "Successfully created an review."
     }
 ```
 
 ```json
     {
-      "message": 'Failed to create a review.'
+      "message": "Failed to create a review."
     }
 ```
 &nbsp;
@@ -463,13 +463,13 @@ This server provides the end-points for a popular dishes service on to a well kn
 
 ```json
     {
-      "message": 'Successfully updated a review.'
+      "message": "Successfully updated a review."
     }
 ```
 
 ```json
     {
-      "message": 'Failed to update a review.'
+      "message": "Failed to update a review."
     }
 ```
 &nbsp;
@@ -492,12 +492,12 @@ This server provides the end-points for a popular dishes service on to a well kn
 
   ```json
     {
-      "message": 'Successfully delete a review.'
+      "message": "Successfully delete a review."
     }
 ```
 
 ```json
     {
-      "message": 'Failed to delete a review.'
+      "message": "Failed to delete a review."
     }
 ```
