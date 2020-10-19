@@ -13,7 +13,7 @@ function generateRestaurantRecord(recordsToGenerate){
 
     const restaurantsTable = [];
     console.log("Generating Restaurant Table Data");
-    for(let i=0; i<recordsToGenerate; i++){
+    for(let i=1; i<=recordsToGenerate; i++){
         if (i % 50000 === 0){
             console.log(`STATUS: ${i/recordsToGenerate*100}% completed!`);
         }
@@ -26,7 +26,7 @@ function generateRestaurantRecord(recordsToGenerate){
     .writeRecords(restaurantsTable)
     .then(() => {
         console.log('The Restaurants Table CSV file was written successfully');
-        generateDishesRecords(0, 0, recordsToGenerate)
+        generateDishesRecords(0, 1, recordsToGenerate)
     });
 }
 

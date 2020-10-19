@@ -1,3 +1,4 @@
 node_modules
 model/config.js
 database/postgres/sample_data
+database/cassandra/sample_data
