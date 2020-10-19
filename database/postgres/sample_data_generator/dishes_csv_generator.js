@@ -7,7 +7,8 @@ function generateDishesRecords(index, totalCount, recordsToGenerate){
     console.log(`Started ${index} iteration...`);
     const recordsIterationCount = 250000;
     const startingIndex = index * recordsIterationCount;
-    const endingIndex = index * recordsIterationCount + recordsIterationCount;
+    const endingIndex = Math.min(index * recordsIterationCount + recordsIterationCount, recordsToGenerate);
+    console.log(`Started dishes records generation from ${startingIndex+1} to ${endingIndex}.`)
 
     const dishesTableCsvWriter = createCsvWriter({
         path: `../sample_data/dishes_table.csv`,
@@ -84,10 +85,6 @@ function generateDishesRecords(index, totalCount, recordsToGenerate){
         if (count % 250000 === 0){
             console.log(`COUNT: ${count}.`)
         }
-        if (count % 250000 === 0){
-            console.log(`Object at ${count}:`)
-            console.log(dishnamesTable[dishnamesTable.length-1]);
-        }
     
         //dishes object generation
         const numOfDishes = Math.ceil(Math.random() * 8) + 2;
@@ -95,7 +92,7 @@ function generateDishesRecords(index, totalCount, recordsToGenerate){
             const randomNameIndex = Math.ceil(Math.random()*dishNames.length-1);
             const imageUrl = `https://airbnb-bougie.s3-us-west-1.amazonaws.com/listing_images/SDC-files/File-${(Math.ceil(Math.random()*90))}.jpg`
             dishnamesTable.push({
-                dish_name: dishNames[randomNameIndex] + ` ${Math.ceil(Math.random()*100)}`,
+                dish_name: dishNames[randomNameIndex] + ` ${Math.ceil(Math.random()*10000)}`,
                 ingredients: faker.random.words(4),
                 picture: imageUrl,
                 restaurant_id: i,
@@ -107,12 +104,12 @@ function generateDishesRecords(index, totalCount, recordsToGenerate){
     dishesTableCsvWriter
     .writeRecords(dishnamesTable)
     .then(() => {
-        console.log(`The Dishes Table CSV file is complete - ${count} records were written successfully`); 
+        console.log(`The Dishes Table CSV file - ${count} records were written successfully`); 
         if (endingIndex < recordsToGenerate) {
             const newIndex = index + 1;
             generateDishesRecords(newIndex, count, recordsToGenerate);
         } else {
-            generateUsersRecords(0, 0, count);
+            generateUsersRecords(0, 1, count);
             console.log(`Total Dishes Count: ${count}`)
         }
     })
