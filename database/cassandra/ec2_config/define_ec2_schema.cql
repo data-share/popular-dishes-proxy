@@ -1,5 +1,5 @@
 DROP KEYSPACE IF EXISTS SDC;
-CREATE KEYSPACE SDC WITH replication = {'class' : 'SimpleStrategy', 'replication_factor' : 1};
+CREATE KEYSPACE SDC WITH replication = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
 
 USE sdc;
 
@@ -15,11 +15,11 @@ CREATE TABLE dishes_by_restaurant (
     dish_name text, --dish name
     ingredients text, --dish ingredients list
     picture text, --dish image url link string
-    PRIMARY KEY(restaurant_id)
+    PRIMARY KEY(restaurant_id, dish_id)
 );
 
 -- insert dish, insert review, insert user, 
-CREATE TABLE user_reviews_by_dish (
+CREATE TABLE user_reviews_by_dish(
     dish_id INT, --dish ID
     dish_name text, --dish name
     review_id INT,
@@ -30,7 +30,7 @@ CREATE TABLE user_reviews_by_dish (
     user_name text, --user's name
     avatar text, --avatar url
     vip_status text, -- avatar's vip status
-    PRIMARY KEY(review_id, dined_on)
+    PRIMARY KEY((dish_id), dined_on)
 ) WITH CLUSTERING ORDER BY (dined_on DESC);
 
 
@@ -51,3 +51,7 @@ CREATE TABLE restaurants (
     restaurant_id INT PRIMARY KEY,
     restaurant_name text --restaurant name
 );
+
+--  restaurant_id | dish_id | dish_name | ingredients | picture | restaurant_name
+--  dish_id | dined_on | avatar | dish_name | review | review_id | stars | user_id | user_name | vip_status
+--  26,430,848

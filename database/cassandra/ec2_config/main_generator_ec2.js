@@ -1,4 +1,3 @@
-const { internet } = require('faker');
 const faker = require('faker');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
@@ -55,15 +54,117 @@ const dishNames = [
     'Coriander and leek wontons',
 ];
 
+const companyName = [
+'Risus At Fringilla Industries',
+'Augue Scelerisque Mollis Limited',
+'Augue Sed Incorporated',
+'Egestas Duis Ac Industries',
+'Convallis Ante Lectus LLC',
+'In Limited',
+'Nec Imperdiet Nec Corporation',
+'Posuere Cubilia Inc',
+'Facilisi Sed Neque Institute',
+'Risus Quis Company',
+'Mus Proin Vel Industries',
+'Vel Corp',
+'Tincidunt Donec Inc',
+'Congue Associates',
+'Ut Company',
+'In Consequat Enim Inc',
+'Sed Malesuada Consulting',
+'Libero Corporation',
+'Interdum Curabitur Dictum LLC',
+'Tincidunt Nunc Ac Limited',
+'Tellus Incorporated',
+'Congue Industries',
+'Sollicitudin Orci Corp',
+'Dapibus Company',
+'Mattis Semper Dui Consulting',
+'Sem Industries',
+'Metus In PC',
+'Scelerisque LLC',
+'Vel Lectus LLP',
+'Luctus Ipsum Corp',
+'Ante Ipsum Primis Limited',
+'Aliquet Corporation',
+'Augue Scelerisque Corp',
+'Egestas Sed Pharetra Inc',
+'Tempor Arcu Vestibulum Associates',
+'Non Feugiat Nec Company',
+'Tellus Imperdiet Non Associates',
+'Felis Ullamcorper Corporation',
+'Commodo LLC',
+'Sapien Cras Dolor Ltd',
+'Aenean Gravida Nunc Corp',
+'Auctor Nunc Corporation',
+'Rutrum Lorem Foundation',
+'Neque Pellentesque Massa Corp',
+'Quam Pellentesque Habitant Foundation',
+'Maecenas Mi Felis Inc',
+'Cras Vulputate Velit Corporation',
+'Vitae LLC',
+'Dui Semper Et Limited',
+'Placerat Augue Sed Consulting',
+'Aliquam Erat Volutpat Industries',
+'Nulla Semper Corp',
+'Egestas Hendrerit Industries',
+'Odio Sagittis Industries',
+'Scelerisque Neque PC',
+'A Ultricies Adipiscing Inc',
+'Convallis Dolor Foundation',
+'Cursus Industries',
+'Donec Nibh Quisque Foundation',
+'Sed Congue Elit Corp',
+'Montes Ltd',
+'Ornare Company',
+'Purus Mauris LLP',
+'Dolor Tempus Ltd',
+'Sed Limited',
+'Aliquam Ltd',
+'Ac Facilisis Facilisis Associates',
+'Semper Cursus Corporation',
+'Et Consulting',
+'Commodo LLC',
+'Cursus Luctus Company',
+'In Consulting',
+'Nulla Associates',
+'Vitae Semper Egestas Industries',
+'Quisque Ornare Incorporated',
+'Purus Incorporated',
+'Aliquet Magna Industries',
+'Nunc Company',
+'Sit Amet Corporation',
+'Nunc Ullamcorper Eu Incorporated',
+'Dictum Associates',
+'Fusce Foundation',
+'Libero Proin Mi Corporation',
+'Massa Integer Institute',
+'Faucibus Lectus LLP',
+'Quis Corp',
+'Placerat Corporation',
+'Nibh Dolor Associates',
+'Ridiculus Mus Donec LLC',
+'Viverra Donec Tempus Associates',
+'Eget Metus Eu Inc',
+'Quam Pellentesque Habitant Corporation',
+'Facilisi Sed Corp',
+'Tincidunt Donec Industries',
+'Sollicitudin Orci LLC',
+'At Libero Ltd',
+'Fermentum Risus At Consulting',
+'Sed Nec Incorporated',
+'Sapien Cras Ltd',
+];
+
 //starting index, recordsToGenerate, dishIndex, reviewIndex, userIndex
 (function generateCassandraRecord(index, recordsToGenerate, dishIdIndex, reviewIdIndex, userIdIndex){
-    const recordsIterationCount = 10000;
+    const recordsIterationCount = 2000;
     const startingIndex = index * recordsIterationCount;
     const endingIndex = Math.min(index * recordsIterationCount + recordsIterationCount, recordsToGenerate);
     console.log(`Started data generation from ${startingIndex+1} to ${endingIndex}.`)
 
     const restaurantsTableCsvWriter = createCsvWriter({
-        path: '../sample_data/restaurants_table.csv',
+        path: './data/restaurants_table.csv',
         header: [
             {id: 'restaurant_id', title: 'restaurant_id'},
             {id: 'restaurant_name', title: 'restaurant_name'},
@@ -72,7 +173,7 @@ const dishNames = [
     });
 
     const usersTableCsvWriter = createCsvWriter({
-        path: '../sample_data/users_table.csv',
+        path: './data/users_table.csv',
         header: [
             {id: 'user_id', title: 'user_id'},
             {id: 'user_name', title: 'user_name'},
@@ -83,30 +184,30 @@ const dishNames = [
     });
 
     const dishesByRestaurantTableCsvWriter = createCsvWriter({
-        path: '../sample_data/dishes_by_restaurant_table.csv',
+        path: './data/dishes_by_restaurant_table.csv',
         header: [
             {id: 'restaurant_id', title: 'restaurant_id'},
-            {id: 'restaurant_name', title: 'restaurant_name'},
             {id: 'dish_id', title: 'dish_id'},
             {id: 'dish_name', title: 'dish_name'},
             {id: 'ingredients', title: 'ingredients'},
             {id: 'picture', title: 'picture'},
+            {id: 'restaurant_name', title: 'restaurant_name'},
         ],
         append: true,
     });
 
     const userReviewsByDishTableCsvWriter = createCsvWriter({
-        path: '../sample_data/users_review_by_dish_table.csv',
+        path: './data/users_review_by_dish_table.csv',
         header: [
             {id: 'dish_id', title: 'dish_id'},
-            {id: 'dish_name', title: 'dish_name'},
-            {id: 'review_id', title: 'review_id'},
-            {id: 'review', title: 'review'},
             {id: 'dined_on', title: 'dined_on'},
+            {id: 'avatar', title: 'avatar'},
+            {id: 'dish_name', title: 'dish_name'},
+            {id: 'review', title: 'review'},
+            {id: 'review_id', title: 'review_id'},
             {id: 'stars', title: 'stars'},
             {id: 'user_id', title: 'user_id'},
             {id: 'user_name', title: 'user_name'},
-            {id: 'avatar', title: 'avatar'},
             {id: 'vip_status', title: 'vip_status'},
         ],
         append: true,
@@ -122,7 +223,8 @@ const dishNames = [
         if (i % 1000 === 0){
             console.log(`STATUS: ${i/recordsToGenerate*100}% completed!`);
         }
-        const restaurantName = faker.company.companyName() + ` ${faker.random.words(2)}`;
+        const companyNameIndex = Math.ceil(Math.random()*(companyName.length-1));
+        const restaurantName = `${faker.random.alpha(5)} ${faker.random.alpha(4)} ${companyName[companyNameIndex]}`;
         restaurantsTable.push({
             restaurant_id: i,
             restaurant_name: restaurantName,
@@ -132,7 +234,7 @@ const dishNames = [
         for (let j=0; j<numberOfDishes; j++){
             const randomNameIndex = Math.ceil(Math.random()*dishNames.length-1);
             const dishName = dishNames[randomNameIndex] + ` ${Math.ceil(Math.random()*100000)}`;
-            const ingredients = faker.random.words(4);
+            const ingredients = faker.lorem.words(5);
             const imageUrl = `https://airbnb-bougie.s3-us-west-1.amazonaws.com/listing_images/SDC-files/File-${(Math.ceil(Math.random()*90))}.jpg`;
             
             dishIdIndex++;
@@ -204,12 +306,13 @@ const dishNames = [
                     if (endingIndex < recordsToGenerate){
                         generateCassandraRecord(index+1, recordsToGenerate, dishIdIndex, reviewIdIndex, userIdIndex);
                     } else {
+                        console.log(`Reviews Generated: ${reviewIdIndex}`);
                         console.log('------- CSV GENERATION COMPLETE -------');
                     }
-                })
-            })
-        })
+                }).catch(err => console.log(err));
+            }).catch(err => console.log(err));
+        }).catch(err => console.log(err));
     }).catch(err => console.log(err));
-})(0, 1200000, 0, 0, 0);
+})(0, 700000, 0, 0, 0);
 
 //starting index, recordsToGenerate, dishIndex, reviewIndex, userIndex
